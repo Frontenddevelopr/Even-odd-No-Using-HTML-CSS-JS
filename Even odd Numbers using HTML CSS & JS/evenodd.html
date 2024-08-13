@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script>
+        function getnum(){
+            let n=document.getElementById("num").value;
+            if(n%2==0){
+                // alert("Even Number:-"+n)
+                document.getElementById("val").innerHTML="Even Number";
+                document.getElementById("color").style.backgroundColor="#bdb3db";
+                //document.getElementById("photo").style.backgroundImage = "url('java script Practice/img/download.jpg')";
+            }else{
+            // alert("Odd Number is:-"+n);
+                document.getElementById("val").innerHTML="odd Number";
+                document.getElementById("color").style.backgroundColor="#53c654";
+            }
+        }
+    </script>
+</head>
+<body id="photo">
+    <div id="color" class="container">
+        <div class="box">
+            Enter Any Number:- <br><input type="text" id="num" placeholder="Enter Number"><br><br>
+            <input type="button" value="Submit" onclick="getnum()">
+            <h2 id="val">See Output</h2> 
+        </div>
+    </div>
+</body>
+</html>
